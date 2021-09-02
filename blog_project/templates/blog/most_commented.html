@@ -1,0 +1,5 @@
+<ul>
+    {% for post in most_commented %}
+    <li><a id="lp" href="{{post.get_absolute_url}}">{{post.title}}</a></li>
+    {% endfor %}
+</ul> 

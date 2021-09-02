@@ -1,0 +1,55 @@
+.sidebar{
+    float:right;
+    width:30%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgb(85, 13, 107);
+}
+
+.content{
+    float:left;
+    width: 60%;
+    padding: 0 0 0 30px;
+    background-color:rgb(241, 84, 84);
+}
+h1{
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+    padding: 0 0 10px 0;
+}
+body{
+    background:rgb(241, 84, 84);
+    color: white;
+
+}
+
+#date{
+    color: yellow;
+    font-size: 12px;
+    font-style: italic;
+}
+
+form{
+    color: rgb(2, 2, 14);
+}
+#ch{
+    color: yellow;
+    font-size: 30px;
+    font-style: italic;
+    border-bottom: 2px solid yellow;
+}
+.cb{
+    font-size: 12px;
+    font-style:italic;
+}
+#hh{
+    color:darkblue;
+}
+#pcount{
+    font-size: 40px;
+    color: yellow;
+    font-weight: bold;
+}
+#lp{
+    color: yellow;
+}

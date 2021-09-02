@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+    {% block title_block %}
+        AHEEL'S BLOG
+        {% endblock %}
+    {% block content_block %}
+        <h1>AHEEL'S BLOG</h1>
+        {% if tag %}
+        <h2>Posts tagged with "{{tag.name}}"</h2>
+        {% endif %}
+
+        {% for post in post_list %}
+       <h2><a id="hh" href="{{post.get_absolute_url}}">{{post.title}}</a></h2>
+        <p id="date">Published on {{post.publish}} by {{post.author|title}}</p>
+        <p>Tag:
+        {% for tag in post.tags.all %}
+            <a class="btn btn-success btn-lg" href="{%url 'post_list_by_tag_name' tag.slug %}">{{tag.name}}</a>
+            {% endfor %}
+        </p>
+        {{post.body|truncatewords:30|linebreaks}}
+        {% endfor %}
+        {% include 'blog/pagination.html' with page=post_list %}
+    {% endblock %}
