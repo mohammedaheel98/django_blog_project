@@ -1,4 +1,4 @@
-From ubuntu
+FROM ubuntu
 WORKDIR /app
 COPY requirements.txt /app
 COPY blog_project /app
